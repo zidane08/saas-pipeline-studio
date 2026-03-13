@@ -9,7 +9,7 @@ const App = () => {
     retainer: "",
   });
 
-  const [formStatus, setFormStatus] = useState("idle"); // idle | submitting | success | error
+  const [formStatus, setFormStatus] = useState("idle");
   const [formMessage, setFormMessage] = useState("");
 
   const submitPipelineAuditRequest = async (data) => {
@@ -75,7 +75,6 @@ const App = () => {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-5 lg:py-8">
-        {/* Navbar */}
         <nav className="flex items-center justify-between py-3 border-b border-slate-200/80 mb-6 lg:mb-10">
           <div className="flex items-center gap-3">
             <div className="w-9 h-9 rounded-lg bg-slate-900 flex items-center justify-center">
@@ -124,7 +123,6 @@ const App = () => {
           </div>
         </nav>
 
-        {/* Hero */}
         <header className="py-10 lg:py-16">
           <div className="max-w-3xl">
             <div className="inline-flex items-center rounded-full border border-emerald-100 bg-emerald-50 px-3 py-1 mb-4">
@@ -166,7 +164,6 @@ const App = () => {
           </div>
         </header>
 
-        {/* Problem */}
         <section id="problem" className="py-10 border-t border-slate-200/80">
           <div className="max-w-3xl">
             <h2 className="text-base font-semibold text-slate-900 mb-3">
@@ -211,7 +208,6 @@ const App = () => {
           </div>
         </section>
 
-        {/* Solution */}
         <section id="solution" className="py-10 border-t border-slate-200/80">
           <div className="max-w-4xl">
             <h2 className="text-base font-semibold text-slate-900 mb-3">
@@ -263,7 +259,6 @@ const App = () => {
           </div>
         </section>
 
-        {/* How it works */}
         <section id="how-it-works" className="py-10 border-t border-slate-200/80">
           <div className="max-w-4xl">
             <h2 className="text-base font-semibold text-slate-900 mb-6">
@@ -326,7 +321,6 @@ const App = () => {
           </div>
         </section>
 
-        {/* What you get */}
         <section id="what-you-get" className="py-10 border-t border-slate-200/80">
           <div className="max-w-4xl">
             <h2 className="text-base font-semibold text-slate-900 mb-6">
@@ -388,7 +382,6 @@ const App = () => {
           </div>
         </section>
 
-        {/* Pilot */}
         <section id="pilot" className="py-10 border-t border-slate-200/80">
           <div className="max-w-4xl">
             <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
@@ -482,7 +475,6 @@ const App = () => {
           </div>
         </section>
 
-        {/* Proof */}
         <section id="proof" className="py-10 border-t border-slate-200/80">
           <div className="max-w-5xl">
             <h2 className="text-base font-semibold text-slate-900 mb-6">
@@ -492,7 +484,7 @@ const App = () => {
             <div className="grid md:grid-cols-3 gap-4">
               <div className="rounded-xl border border-slate-200 bg-white p-4">
                 <h3 className="text-sm font-semibold text-slate-900 mb-2">
-                  Sample account list (anonymised)
+                  Sample account list
                 </h3>
                 <div className="rounded-lg border border-slate-200 bg-slate-50 overflow-hidden">
                   <table className="w-full border-collapse text-[11px] text-slate-700">
@@ -533,19 +525,18 @@ const App = () => {
                 </h3>
                 <div className="rounded-lg border border-slate-200 bg-slate-50 p-3">
                   <p className="text-[11px] font-mono text-slate-500 mb-1">
-                    Subject: Structuring demo-ready traffic for your project
-                    management SaaS
+                    Subject: Structuring demo-ready traffic for your project management SaaS
                   </p>
                   <p className="text-[11px] text-slate-700 mb-2">Hi [First name],</p>
                   <p className="text-[11px] text-slate-700 mb-2">
                     We’ve been looking at how [Company] positions its project
                     management platform, in particular the focus on team adoption
-                    and the “get started in minutes” angle on your homepage.
+                    and the get-started angle on your homepage.
                   </p>
                   <p className="text-[11px] text-slate-700 mb-2">
                     We work with B2B SaaS teams that rely on demo requests and
-                    trials, and we run structured PPC programs specifically to
-                    increase qualified demo volume without diluting lead quality.
+                    trials, and we run structured PPC programs to increase qualified
+                    demo volume without diluting lead quality.
                   </p>
                   <p className="text-[11px] text-slate-700 mb-2">
                     Would it be useful to walk through how we’d structure a PPC
@@ -555,8 +546,7 @@ const App = () => {
                   <p className="text-[11px] text-slate-700">SaaS Pipeline Studio</p>
                 </div>
                 <p className="mt-2 text-[11px] text-slate-500">
-                  Example of first-touch outreach referencing the prospect’s
-                  product and funnel.
+                  Example of first-touch outreach.
                 </p>
               </div>
 
@@ -584,15 +574,13 @@ const App = () => {
                   </ul>
                 </div>
                 <p className="mt-2 text-[11px] text-slate-500">
-                  Illustrative view of the level of visibility you get on the
-                  outbound motion.
+                  Illustrative view of visibility on the outbound motion.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* FAQ */}
         <section id="faq" className="py-10 border-t border-slate-200/80">
           <div className="max-w-4xl">
             <h2 className="text-base font-semibold text-slate-900 mb-6">
@@ -658,7 +646,6 @@ const App = () => {
           </div>
         </section>
 
-        {/* Audit */}
         <section id="audit" className="py-14 border-t border-slate-200/80">
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-start">
             <div>
@@ -687,8 +674,7 @@ const App = () => {
                 <li className="flex gap-2.5">
                   <span className="mt-1 h-1.5 w-1.5 rounded-full bg-slate-400" />
                   <span>
-                    Outline what a 60-day pilot could realistically produce in your
-                    case.
+                    Outline what a 60-day pilot could realistically produce in your case.
                   </span>
                 </li>
               </ul>
@@ -821,7 +807,6 @@ const App = () => {
           </div>
         </section>
 
-        {/* Footer */}
         <footer className="border-t border-slate-200/80 py-5 mt-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-3 text-[11px] text-slate-500">
             <div className="flex flex-col md:flex-row items-center gap-2">
@@ -830,9 +815,12 @@ const App = () => {
             </div>
 
             <div className="flex flex-col md:flex-row items-center gap-3">
-              <span className="hidden md:inline-block">
-                Structured outbound program for PPC agencies serving B2B SaaS.
-              </span>
+              <a
+                href="/privacy"
+                className="text-slate-600 hover:text-slate-900 font-medium"
+              >
+                Privacy Policy
+              </a>
               <a
                 href="mailto:founder@saaspipelinestudio.com"
                 className="text-emerald-700 hover:text-emerald-800 font-medium"
